@@ -60,3 +60,8 @@ class UserProfileAdmin(UserAdmin):
     )
 
     ordering = ("id",)
+    
+from django.contrib import admin
+from .models import Follow
+
+admin.site.register(Follow)
